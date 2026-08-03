@@ -4,7 +4,9 @@
   "type": "tree-sitter",
   "parser": "tree-sitter-dockerfile",
   "injectionRegex": "^(dockerfile)$",
-  "fileTypes": ["Dockerfile", "dockerfile", "Containerfile", "containerfile", "dockerignore"],
+  // No `dockerignore`: it is gitignore syntax, not Dockerfile syntax, and
+  // belongs to language-git's `source.gitignore`.
+  "fileTypes": ["Dockerfile", "dockerfile", "Containerfile", "containerfile"],
   "comments": {
     "start": "# "
   },
