@@ -1,0 +1,22 @@
+{
+  "name": "Dockerfile",
+  "scopeName": "source.dockerfile",
+  "type": "modern-tree-sitter",
+  "parser": "tree-sitter-dockerfile",
+  "injectionRegex": "^(dockerfile)$",
+  "fileTypes": ["Dockerfile", "dockerfile", "Containerfile", "containerfile", "dockerignore"],
+  "comments": {
+    "start": "# "
+  },
+  "treeSitter": {
+    // Pin a tag or a full SHA, never a branch. Verify the ref is on the main
+    // line before trusting it — `gh api repos/OWNER/REPO/compare/<ref>...HEAD`
+    // reporting `diverged` or a nonzero `behind` means it is not.
+    "parserSource": "github:camdencheek/tree-sitter-dockerfile#v0.2.0",
+    "wasmBuildTool": "tree-sitter-cli#v0.26.11",
+    "grammar": "tree-sitter-dockerfile/tree-sitter-dockerfile.wasm",
+    "highlightsQuery": "tree-sitter-dockerfile/highlights.scm",
+    "foldsQuery": "tree-sitter-dockerfile/folds.scm",
+    "tagsQuery": "tree-sitter-dockerfile/tags.scm"
+  }
+}

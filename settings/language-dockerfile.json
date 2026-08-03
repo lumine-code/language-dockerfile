@@ -1,0 +1,12 @@
+{
+  ".source.dockerfile": {
+    "language": {
+      "commentStart": "# ",
+      "increaseIndentPattern": "\\{[^}\"']*$",
+      "decreaseIndentPattern": "^\\s*\\}"
+    },
+    "bracket-matcher": {
+      "autocompleteCharacters": ["()", "[]", "{}", "\"\"", "''"]
+    }
+  }
+}
