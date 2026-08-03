@@ -1,7 +1,7 @@
 {
   "name": "Dockerfile",
   "scopeName": "source.dockerfile",
-  "type": "modern-tree-sitter",
+  "type": "tree-sitter",
   "parser": "tree-sitter-dockerfile",
   "injectionRegex": "^(dockerfile)$",
   "fileTypes": ["Dockerfile", "dockerfile", "Containerfile", "containerfile", "dockerignore"],
