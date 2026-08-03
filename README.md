@@ -9,6 +9,10 @@ Dockerfile language support.
 - **Stages**: names a multi-stage build's stages so they can be jumped to.
 - **Folding**: folds heredoc bodies.
 
+## Installation
+
+To install `language-dockerfile` search for _language-dockerfile_ in the Install pane of the Lumine settings or run `lumine --install lumine-code/language-dockerfile`.
+
 ## Usage
 
 The body of a `RUN` is shell, which this grammar does not parse, so it is scoped as text rather than given a structure the parse cannot support.
