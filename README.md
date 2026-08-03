@@ -4,7 +4,7 @@ Dockerfile language support.
 
 ## Features
 
-- **Grammars**: provides Tree-sitter grammars.
+- **Grammars**: provides Tree-sitter grammars, built from [tree-sitter-dockerfile](https://github.com/camdencheek/tree-sitter-dockerfile).
 - **Syntax highlighting**: instructions, image references split into name, tag and digest, build arguments and environment pairs.
 - **Stages**: names a multi-stage build's stages so they can be jumped to.
 - **Folding**: folds heredoc bodies.
