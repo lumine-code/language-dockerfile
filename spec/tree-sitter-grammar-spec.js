@@ -9,7 +9,7 @@ const path = require("path");
 
 describe("Dockerfile Tree-sitter grammar", () => {
   beforeEach(async () => {
-    await atom.packages.activatePackage("language-dockerfile");
+    await lumine.packages.activatePackage("language-dockerfile");
   });
 
   it("tokenizes the fixture", async () => {
