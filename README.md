@@ -11,7 +11,7 @@ Dockerfile language support.
 
 ## Installation
 
-To install `language-dockerfile` search for _language-dockerfile_ in the Install pane of the Lumine settings or run `lumine --install lumine-code/language-dockerfile`.
+To install `language-dockerfile` search for it in the Install pane of the Lumine settings, or run the command `lumine --install lumine-code/language-dockerfile`.
 
 ## Usage
 
@@ -19,8 +19,8 @@ The body of a `RUN` is shell, which this grammar does not parse, so it is scoped
 
 ## Services
 
-- **hyperlink.injection** (`^1.0.0`): consumed to highlight URLs inside Dockerfiles as clickable links.
-- **todo.injection** (`^1.0.0`): consumed to highlight `TODO`-style markers inside comments.
+- `hyperlink.injection`: consumed to highlight URLs inside Dockerfiles as clickable links.
+- `todo.injection`: consumed to highlight `TODO`-style markers inside comments.
 
 ## Contributing
 
