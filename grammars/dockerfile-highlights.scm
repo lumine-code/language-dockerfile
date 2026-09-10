@@ -28,7 +28,8 @@
   (image_digest
     "@" @punctuation.separator.digest.dockerfile))
 
-(comment) @comment.line.number-sign.dockerfile
+((comment) @comment.line.number-sign.dockerfile
+  (#set! adjust.endBeforeFirstMatchOf "\\r?$"))
 ((comment) @punctuation.definition.comment.dockerfile
   (#set! adjust.endAfterFirstMatchOf "^#"))
 
@@ -42,8 +43,8 @@
 ] @entity.name.label.dockerfile
 
 ; A heredoc body is raw text, not a quoted string.
-(heredoc_block
-  (heredoc_line) @string.unquoted.heredoc.dockerfile)
+((heredoc_line) @string.unquoted.heredoc.dockerfile
+  (#is? test.childOfType heredoc_block))
 
 (expansion
   "$" @punctuation.definition.variable.dockerfile)
