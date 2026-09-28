@@ -37,17 +37,17 @@ describe("Dockerfile Tree-sitter grammar", () => {
     );
     await editor.languageMode.ready;
 
-    const layer = editor.languageMode.rootLanguageLayer;
-    expect(layer.tree.rootNode.hasError).toBe(false);
+    expect((await editor.getSyntaxDiagnostics()).hasError).toBe(false);
     expect(editor.scopeDescriptorForBufferPosition([3000, 0]).getScopesArray()).toContain(
       "string.unquoted.heredoc.dockerfile",
     );
-    const captures = layer.queries.highlightsQuery
-      .captures(layer.tree.rootNode, {
-        startPosition: new Point(3000, 0),
-        endPosition: new Point(3006, 0),
-      })
-      .filter(({ name }) => name === "string.unquoted.heredoc.dockerfile");
+    const groups = await editor.getGrammarQueryCaptureGroups("highlightsQuery", {
+      startPosition: new Point(3000, 0),
+      endPosition: new Point(3006, 0),
+    });
+    const captures = groups
+      .find(({ grammar }) => grammar === editor.getGrammar())
+      .captures.filter(({ name }) => name === "string.unquoted.heredoc.dockerfile");
     expect(captures.length).toBe(6);
     expect(
       captures.every(({ node }) => node.startPosition.row >= 3000 && node.startPosition.row < 3006),
