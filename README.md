@@ -17,10 +17,10 @@ To install `language-dockerfile` search for it in the Install pane of the Lumine
 
 The body of a `RUN` is shell, which this grammar does not parse, so it is scoped as text rather than given a structure the parse cannot support.
 
-## Services
+## Injections
 
-- `hyperlink.injection`: consumed to highlight URLs inside Dockerfiles as clickable links.
-- `todo.injection`: consumed to highlight `TODO`-style markers inside comments.
+- Static Tree-sitter injections highlight URLs with `language-hyperlink`.
+- Static Tree-sitter injections highlight comment markers with `language-todo`.
 
 ## Contributing
 

@@ -18,6 +18,7 @@
     "wasmBuildTool": "tree-sitter-cli#v0.27.0",
     "grammar": "dockerfile.wasm",
     "highlightsQuery": "dockerfile-highlights.scm",
+    "injectionsQuery": "dockerfile-injections.scm",
     "foldsQuery": "dockerfile-folds.scm",
     "tagsQuery": "dockerfile-tags.scm"
   }
