@@ -9,6 +9,8 @@ Dockerfile language support.
 - **Stages**: names a multi-stage build's stages so they can be jumped to.
 - **Folding**: folds heredoc bodies.
 
+![Dockerfile syntax highlighting at the default editor font size.](.github/demo.png)
+
 ## Installation
 
 To install `language-dockerfile` search for it in the Install pane of the Lumine settings, or run the command `lumine --install lumine-code/language-dockerfile`.

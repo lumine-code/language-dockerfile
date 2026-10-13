@@ -1,0 +1,16 @@
+{
+  "title": "language-dockerfile",
+  "description": "Dockerfile syntax highlighting in the editor.",
+  "recordedOn": "2026-10-13",
+  "sourceRevision": "2ebe2d8e861ed3703e61692c7faaa1bf9b94f2c9",
+  "mode": "normal",
+  "fontSettings": "default",
+  "images": [
+    {
+      "file": "demo.png",
+      "label": "Dockerfile syntax highlighting at the default editor font size.",
+      "width": 1100,
+      "height": 360
+    }
+  ]
+}
