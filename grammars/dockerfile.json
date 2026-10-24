@@ -15,7 +15,7 @@
     // line before trusting it — `gh api repos/OWNER/REPO/compare/<ref>...HEAD`
     // reporting `diverged` or a nonzero `behind` means it is not.
     "parserSource": "github:camdencheek/tree-sitter-dockerfile#v0.2.0",
-    "wasmBuildTool": "tree-sitter-cli#v0.27.0",
+    "wasmBuildTool": "tree-sitter-cli#v0.27.1",
     "grammar": "dockerfile.wasm",
     "highlightsQuery": "dockerfile-highlights.scm",
     "injectionsQuery": "dockerfile-injections.scm",
