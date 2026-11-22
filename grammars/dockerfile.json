@@ -20,6 +20,7 @@
     "highlightsQuery": "dockerfile-highlights.scm",
     "injectionsQuery": "dockerfile-injections.scm",
     "foldsQuery": "dockerfile-folds.scm",
+    "tagsQuerySupportsLocalPath": true,
     "tagsQuery": "dockerfile-tags.scm"
   }
 }
